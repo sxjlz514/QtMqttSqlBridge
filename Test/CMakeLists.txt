@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+﻿cmake_minimum_required(VERSION 3.16)
 project(Test VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -13,11 +13,12 @@ qt_standard_project_setup(REQUIRES 6.10)
 
 
 qt_add_executable(appTest
-    main.cpp
+
     sqlmanagerwrapper.h
     sqlmanagerwrapper.cpp
     mqttdbtestbridge.h
     mqttdbtestbridge.cpp
+     main.cpp
 )
 
 
